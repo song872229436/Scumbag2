@@ -1,0 +1,62 @@
+/*.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}*/
+
+@-webkit-keyframes H-btn{
+		0%{
+			transform:scale(0.8);
+		}
+		100%{
+			transform:scale(1);
+		}
+	}
+	@-webkit-keyframes H-font{
+		50%{
+			top:48%;
+		}
+		75%{
+			top:52%;
+		}
+		100%{
+			top:48%;
+		}		
+	}
+	@-webkit-keyframes H-b1{
+		40%{
+			left:80%;
+		}
+		100%{
+			left:56%;
+		}
+	}
+	@-webkit-keyframes H-b2{
+		20%{
+			left:10%;
+		}
+		100%{
+			left:37%;
+		}
+	}
+	@-webkit-keyframes H-sir{
+		20%{
+			left:0%;
+		}
+		100%{
+			left:2%;
+		}
+	}
+	@keyframes H-bolang{
+	0%{transform:scale(1.2);}
+	100%{transform:scale(1.5);}
+	}
+	@keyframes H-bolang2{
+	0%{transform:scale(1.6);}
+	100%{transform:scale(1.9);}
+	}
+	@keyframes H-bolang3{
+	0%{transform:scale(1.9);}
+	100%{transform:scale(2.2);}
+	}

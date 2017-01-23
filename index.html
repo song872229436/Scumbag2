@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>人渣鉴定中心</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1 ,maximum-scale=1.0,user-scalable=no" >
+	<meta http-equiv="Cache-Control" content="cache" />
+<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<link rel="stylesheet" href="css/index.css">
+	<!-- <link rel="stylesheet" href="css/animate.css"> -->
+	<link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body>
+<!--首页  -->
+	<div data-role="page" id="Home" data-rel="external ">
+		<div id="H-btn" class="animated bounceIn">
+			<a  data-transition="fade">
+			<img src="img/home_zha_btn.png" alt=""></a>
+			<div id="H-bolang"></div>
+			<div id="H-bolang2"></div>
+			<div id="H-bolang3"></div>
+		</div>
+		<div id="H-font" class="animated bounce ">
+			<img src="img/home_font.png" alt="">
+		</div>
+		<div id="H-sir" class=" animated slideInLeft">
+			<img src="img/home_zha_sir.png" alt="">
+		</div>
+		<div id="H-b1" class=" animated bounceInRight">
+			<img src="img/home_bubble_1.png" alt="">
+		</div>
+		<div id="H-b2" class=" animated bounceInLeft">
+			<img src="img/home_bubble_2.png" alt="">
+		</div>
+		<div id="H-logo">
+			<img src="img/home_logo.png" alt="">
+		</div>
+
+		
+	</div>
+<!-- 文章列表 -->
+	<div data-role="page" id="ArticleList" >
+		<div class="search-t">
+			<a class="back" ><img src="img/nav_place.png" alt=""></a>
+			<div class="City">
+				<span class="city-shengfen">全国</span>
+				<span><a href="#search-bar" class="city-qiehuan">[切换城市]</a></span>
+			</div>
+			<div class="headcount" >
+				<span>有</span>
+				<span class="total">10086</span>
+				<span>名渣男渣女</span>
+			</div>		
+		</div>
+		<div class="A-search">
+			<div class="A-search-txt">	
+				<img src="img/search_search.png" alt="">
+				<a class="back" style="color: #E5E5E5;" data-transition="pop" data-direction="reverse" >搜索文章</a>
+			</div>
+		</div>
+		<div class="A-list"  id="test">		
+				<div class="A-list-out" id="list_out" >
+					<div class="A-list-con" id="list_con">
+						<div class="A-list-con-txt">
+							<section id="title-sum">
+								<h1>#title#</h1>
+								<p>#content#</p>
+							</section>
+						</div>
+						<div class="A-list-con-img">
+						</div>
+						<div class="A-list-con-fot">
+							<div class="A-list-con-time">
+								<p id="date">#date#</p>
+							</div>
+							<div class="A-list-con-pv">
+								<img src="img/news_browse.png" alt="">
+								<span id="heightend">#heightend#</span>
+							</div>
+						</div>			
+					</div>
+				</div>	
+	
+			</div>
+		</div>
+		
+	</div>
+<!-- 文章内容 -->
+	<div data-role="page" id="Article" id="test2"> 
+	    <div class="search-t2">
+	      <a class="back" href="#ArticleList" data-transition="pop" data-direction="reverse"
+	      ><img src="img/nav_back.png" alt=""></a>
+	      <span>文章内容</span>
+	    </div>
+	    <div class="A-txt-out" >
+				<div class="A-txt-con">
+					<div class="A-txt-con-txt">
+						<section id="title-sum2">
+							<h1></h1>
+							<div class="A-txt-con-fot">
+								<div class="A-txt-con-time">
+									<p id="date2"></p>
+								</div>
+								<div class="A-txt-con-pv">
+									<img src="img/news_browse.png" alt="">
+									<span id="heightend2"></span>
+								</div>
+							</div>		
+							<!-- <div class="A-txt-con-img">
+							</div> -->
+							<div id="content">
+							</div>	
+							<!-- <p id="content"></p> -->
+						</section>
+					</div>
+					
+				</div>
+			</div>	
+  </div>
+
+<!-- 渣中寻他 -->
+	<div data-role="page" id="dregs">
+		<div class="search-t2">
+			<a class="back" href="#ArticleList" data-transition="pop" data-direction="reverse"><img src="img/nav_back.png" alt=""></a>
+			<span>渣中寻他</span>
+		</div>
+		<div id="d-form" >
+			<form method="post" action="demoform.asp">
+		      <div id="d-province">	
+		      		<span class="shengfen"><label for="shengfen">选择城市</label></span>
+					<select name="shengfen" id="shengfen" >
+					</select>					
+		      </div>
+		      <div id="d-age">	
+		      		<span class="age">年龄范围</span>
+					<select name="age" id="as">
+						<option value="10">10岁</option>
+		        	 	<option value="20" selected="select">20岁</option>
+		         		<option value="30">30岁</option>
+		         		<option value="40">40岁</option>
+		         		<option value="50">50岁</option>
+		         		<option value="60">60岁</option>
+		        	 	<option value="70">70岁</option>
+		         		<option value="80">80岁</option>
+		         		<option value="90">90岁</option>
+		         		<option value="100">100岁</option>
+					</select>
+					<span class="age">-</span>
+					<select name="age" id="ae">
+						<option value="10">10岁</option>
+		        	 	<option value="20">20岁</option>
+		         		<option value="30" selected="select">30岁</option>
+		         		<option value="40">40岁</option>
+		         		<option value="50">50岁</option>
+		         		<option value="60">60岁</option>
+		        	 	<option value="70">70岁</option>
+		         		<option value="80">80岁</option>
+		         		<option value="90">90岁</option>
+		         		<option value="100">100岁</option>
+					</select>					
+		      </div>
+		      <div id="d-property">	
+		      		<span class="property">资产情况</span>
+					<select name="car" id="car">
+						<option value="true" >有车</option>
+		        	 	<option value="false">无车</option>
+					</select>
+					<span class="property">-</span>
+					<select name="house" id="house">
+						<option value="true">有房</option>
+		        	 	<option value="false">无房</option>
+					</select>				
+		      </div>
+		     <div id="d-sex" style="margin-top: 0.7rem;">	
+		      		<span class="sex">选择性别</span>
+					
+					<div id="sex" style="margin-right: 1.4rem;" class="man" value="1"> 
+						<span>男</span> 
+						<img src="img/seach_sex_choose.png" alt="" >
+					</div>
+					<div id="sex" class="woman" value="0"> 
+						<span>女</span> 
+						<img src="img/seach_sex_choose.png" alt="" style="display: none;">
+					</div>					
+		      </div>   
+		    <div class="ui-btn ui-input-btn ui-corner-all ui-shadow" id="next">下一步
+		     <input type="submit"  value="下一步"  data-role="none">
+		    </div>
+		    <script>
+		    	
+		    </script>
+   			</form>
+		</div> 	
+	</div>
+
+<!-- 搜索省份页面 -->
+	<div data-role="page" id="search-bar">
+			<div class="search-t">
+				  	<a class="back" href="#ArticleList" data-transition="slide" data-direction="reverse"><img src="img/nav_back.png" alt=""></a>
+				  	<form action="" id="fsearch">
+				  		<input type="search" id="searchCityName" placeholder="搜索城市名称" />
+				  	</form>
+				  
+				  	<div id="search-btn">
+						<span>搜索</span>
+				  	</div>
+			</div>
+			<div class="search-cs">
+				<p >当前选择：<span>全国</span></p>
+			</div>
+			<ul data-role="listview" id="nationwide">
+				<li>全国</li>
+			</ul>
+			<ul data-role="listview" id="provinces">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<!-- <li areaname="全国">全国</li> -->
+			</ul>	
+	</div>
+	
+	<script src="js/all.js" async></script>
+
+</body>
+</html>
